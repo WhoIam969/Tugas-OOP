@@ -4,4 +4,4 @@
 ### Membuat Paragraf
 Program sederhana pesawat tempur menggunakan c++
 ini adalah tampilannya
-![img]Screenshot/Pesawat_Tempur.png
+![Gambar 1](Screenshot/Pesawat_Tempur.png)
