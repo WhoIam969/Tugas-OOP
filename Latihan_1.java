@@ -1,31 +1,53 @@
-
 //Membuat Class
 class Person{
-    String Nama;
-    String JenisKelamin;
-    int umur;
+    private String Nama;
+    private String JenisKelamin;
+    private int umur;
+
+    //setter
+    public void setNama(String Nama){
+        this.Nama = Nama;
+    }
+    public void setJenisKelamin(String JenisKelamin){
+        this.JenisKelamin = JenisKelamin;
+    }
+    public void setumur(int umur){
+        this.umur = umur;
+    }
+
+    //getter
+    public String getNama(){
+        return this.Nama;
+    }
+    public String getJenisKelamin(){
+        return this.JenisKelamin;
+    }
+    public int getumur(){
+        return this.umur;
+    }
+
 }
 
-public class Main {
-    public static void main(String[] args) throws Exception {
+public class Latihan_1{
+    public static void main(String[] args) {
 
         //Membuat Object
         Person Person1 = new Person();
-        Person1.Nama = "Anton";
-        Person1.JenisKelamin = "Laki-Laki";
-        Person1.umur = "20";
-        
-        System.out.println(Person1.Nama);
-        System.out.println(Person1.JenisKelamin);
-        System.out.println(Person1.umur);
 
-        Person Person2 = new Person();
-        Person2.Nama = "Riko";
-        Person2.JenisKelamin = "Laki-Laki";
-        Person2.umur = "20";
-
-        System.out.println(Person2.Nama);
-        System.out.println(Person2.JenisKelamin);
-        System.out.println(Person2.umur);
+        //Memanggil atribut dan memberi nilai */
+        Person1.setNama("Anton");
+        Person1.setJenisKelamin("Laki-Laki");
+        Person1.setumur(20);
+        System.out.println("Nama: " + Person1.getNama());
+        System.out.println("Gender: " + Person1.getJenisKelamin());
+        System.out.println("Umur: " + Person1.getumur());
+        System.out.println("==============================");
+        //Memanggil atribut dan memberi nilai */
+        Person1.setNama("Riko");
+        Person1.setJenisKelamin("Laki-Laki");
+        Person1.setumur(20);
+        System.out.println("Nama: " + Person1.getNama());
+        System.out.println("Gender: " + Person1.getJenisKelamin());
+        System.out.println("Umur: " + Person1.getumur());
     }
 }
